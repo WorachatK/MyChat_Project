@@ -74,7 +74,7 @@ const Home = () => {
                                 <div className='card bg-light mb-3 w-75 rounded'>
                                     <div className='m-4 d-flex align-items-center'>
                                         <img src={user.photoURL} alt=""
-                                        className="img-fluid d-block rounded-circle" style={{height: 50}}/>
+                                        className="img-fluid d-block rounded-circle" style={{height: 50,width:50}}/>
                                         <textarea type="text" className='w-100 mx-4' name='datapost' placeholder="Say something..." defaultValue={valuePost}/>
                                     </div>
                                     <button type="submit" className="btn btn-outline-success mx-5 mb-4">Post</button>

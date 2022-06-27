@@ -66,7 +66,7 @@ const Getpost = () => {
                 <div className='card bg-light mb-3 w-75 rounded'>
                     <div className='m-4 d-flex align-items-center'>
                         <img src={postdata.photo} alt=""
-                        className="img-fluid d-block rounded-circle" style={{height: 50}}/>
+                        className="img-fluid d-block rounded-circle" style={{height: 50,width:50}}/>
                         <div className='mx-4 d-flex flex-column w-100'>
                             <h5 className='m-0'>{postdata.name}</h5>
                             <p className='m-0'>{postdata.time}</p>
