@@ -76,8 +76,8 @@ const Home = () => {
                                         <img src={user.photoURL} alt=""
                                         className="img-fluid d-block rounded-circle" style={{height: 50}}/>
                                         <textarea type="text" className='w-100 mx-4' name='datapost' placeholder="Say something..." defaultValue={valuePost}/>
-                                        <button type="submit" className="btn btn-outline-success">Post</button>
                                     </div>
+                                    <button type="submit" className="btn btn-outline-success mx-5 mb-4">Post</button>
                                 </div>
                             </div>
                         </form>
