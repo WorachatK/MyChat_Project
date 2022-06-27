@@ -63,7 +63,7 @@ const Getpost = () => {
         {getPost
             ?.map((postdata)=>
             <div className='d-flex justify-content-center ' key={postdata.key} style={{}}>
-                <div className='card bg-light mb-3 w-50 rounded'>
+                <div className='card bg-light mb-3 w-75 rounded'>
                     <div className='m-4 d-flex align-items-center'>
                         <img src={postdata.photo} alt=""
                         className="img-fluid d-block rounded-circle" style={{height: 50}}/>

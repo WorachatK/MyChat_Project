@@ -27,9 +27,11 @@ const Hearder = () => {
 
             {currentUser ? (
             <div>
-                <div className="navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <Link to="/" className="nav-link active" aria-current="page" >Home</Link>
+                <div className="navbar-collapse justify-content-end d-inline-flex " id="navbarNavAltMarkup">
+                    <div className="">
+                        <Link to="/" className="nav-link active" aria-current="page" >Home</Link>             
+                    </div>
+                    <div>
                         <Link to="/profile" className="nav-link" >My Profile</Link>
                     </div>
                     <Link to="/" className="nav-link" onClick={singout}>
