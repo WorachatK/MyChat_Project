@@ -11,7 +11,6 @@ const Profile = () => {
 
     const [username,setUsername] = useState("")
     const [email,setEmail] = useState("")
-    const [uid,setUid] = useState("")
     const [picUrl,setPicUrl] = useState("")
     const [sucCess,setSuccess] = useState("")
     
@@ -19,7 +18,6 @@ const Profile = () => {
         if (user) {
             setUsername(user.displayName)
             setEmail(user.email)
-            setUid(user.uid)
             setPicUrl(user.photoURL)
         }
     })
@@ -57,13 +55,12 @@ const Profile = () => {
             <div className="row align-items-center">
                 <div className="col-5" >
                     <img src={picUrl} alt=""
-                    className="img-fluid mx-auto d-block rounded-circle" style={{height: 250}}/>
+                    className="img-fluid mx-auto d-block rounded-circle" style={{height: 250,width:250}}/>
                 </div>
 
                 <div className="col-7 ">
                     <h1 className="mb-2 display-8 py-4">Username : {username}</h1>
                     <p className="lead">Email : {email}</p>
-                    <p className="lead">ID : {uid}</p>
                     <p className='text-success'>{sucCess}</p>
                 </div>
             </div>
